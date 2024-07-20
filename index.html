@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>QR-CODE Generator</h1>
+    <div class="form">
+      <form>
+        <div class="textInput">
+          <p>Website link/Text:</p>
+          <input
+            type="text"
+            class="inputText"
+            placeholder="Enter here"
+            required
+          />
+        </div>
+        <div class="colorInput">
+          <p>Select Color:</p>
+          <input type="color" class="color" />
+        </div>
+        <div class="h-w-input">
+          <p>Size in pixels:</p>
+          <input type="number" placeholder="Enter height" class="height" />
+          <input type="number" placeholder="Enter width" class="width" />
+        </div>
+        <div class="button">
+          <button class="getResult" type="button">Generate QR-Code</button>
+        </div>
+      </form>
+      <div class="result">
+        <h3 class="aboutResult"></h3>
+        <img src="" class="img" />
+        <a class="downloadImg"></a>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
