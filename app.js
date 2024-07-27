@@ -51,7 +51,7 @@ async function generateQRCODE(height, width, color, inputVal) {
   const blobImage = await response.blob();
   const href = URL.createObjectURL(blobImage);
   downloadImg.href = href;
-  downloadImg.download = `QR-CODE-${inputVal}`;
+  downloadImg.download = `QR-CODE`;
   downloadImg.innerText = "Download QR-Code";
   //inputVal
   aboutResult.innerHTML = "Result!";
